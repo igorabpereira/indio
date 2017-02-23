@@ -16,13 +16,19 @@
 
 	<script type="text/javascript" src="../scripts/index.js"></script>
 	<script type="text/javascript" src="../scripts/app/controllers/UsuarioController.js"></script>
+	<!-- Referencia ao arquivo onde fica a Controller. Cada Página, um controller. -->
+
 	<script type="text/javascript" src="../scripts/app/config.js"></script>
 
 </head>
 
 <body>
 	<div ng-controller="UsuarioController as usuarioCont" layout="column">
+	<!-- Aqui eu vou colocar qual Controller que vai trabalhar essa página -->
+	
 		<md-content md-theme="docs-dark">
+		<!-- é coisa do layout que provavelmente vai sair -->
+		
 			<form ng-submit="salvarUsuario()" layout="row" layout-align="center center">
 				<md-input-container flex >
 					<label>Digite seu nome</label>
